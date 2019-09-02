@@ -1,0 +1,26 @@
+{
+	"name": "ytdl",
+	"version": "1.0.0",
+	"main": "src/server.ts",
+	"repository": "git@github.com:jellz/ytdl",
+	"author": "Daniel Gulic <danielgulic@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"start": "ts-node src/server.ts"
+	},
+	"dependencies": {
+		"@types/fluent-ffmpeg": "^2.1.10",
+		"dotenv": "^8.1.0",
+		"express": "^4.17.1",
+		"fluent-ffmpeg": "^2.1.2",
+		"helmet": "^3.20.1",
+		"morgan": "^1.9.1",
+		"ytdl-core": "^0.29.5"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.1",
+		"@types/helmet": "^0.0.44",
+		"@types/morgan": "^1.7.37"
+	}
+}
