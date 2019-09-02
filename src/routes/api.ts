@@ -16,9 +16,9 @@ router.get('/convert', async (req: Request, res: Response) => {
 
 	format = format.toLowerCase();
 	const info = await ytdl.getBasicInfo(url);
+	console.log(info.title);
 	const length = parseInt(info.length_seconds);
 	if (length > maxLength) return res.status(400).json({ error: 'The video must be under 2 hours long' });
-	console.log(info);
 	const slug = info.title.split(' ').join('_') + '_danielwashere';
 	res.setHeader(
 		'Content-Disposition',
