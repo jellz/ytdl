@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>YouTube converter</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container container-small">
+			<h2>YouTube converter</h2>
+			<p>Easily convert & download YouTube videos in various formats!</p>
+			<form action="/api/convert" method="GET">
+				<div class="form-row">
+					<div class="col-10">
+						<input
+							type="url"
+							class="form-control"
+							placeholder="Enter valid YouTube URL..."
+							id="url"
+							name="url"
+							pattern="^(http(s)?:\/\/)((w){3}.)?youtu(be|.be)?(\.com)?\/watch\?v=[a-zA-Z0-9]+"
+							required
+						/>
+					</div>
+					<div class="col-2">
+						<select class="form-control" id="format" name="format">
+							<option value="mp4">MP4</option>
+							<option value="mp3">MP3</option>
+						</select>
+					</div>
+				</div>
+				<br />
+				<button
+					type="submit"
+					class="form-control btn btn-primary"
+					value="Convert & Download"
+				>
+					Convert & Download
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
