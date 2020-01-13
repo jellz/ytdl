@@ -29,7 +29,7 @@ router.get('/convert', async (req: Request, res: Response) => {
 	const slug = info.title.split(' ').join('_') + '_danielwashere';
 	res.setHeader(
 		'Content-Disposition',
-		contentDisposition(slug + format)
+		contentDisposition(`${slug}.${format}`)
 	);
 	
 	switch (format) {
