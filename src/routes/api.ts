@@ -1,6 +1,7 @@
 import { Router, Request, Response } from 'express';
 import ytdl from 'ytdl-core';
 import ffmpeg from 'fluent-ffmpeg';
+import contentDisposition from 'content-disposition';
 
 const router = Router();
 
@@ -28,7 +29,7 @@ router.get('/convert', async (req: Request, res: Response) => {
 	const slug = info.title.split(' ').join('_') + '_danielwashere';
 	res.setHeader(
 		'Content-Disposition',
-		`attachment; filename=${slug}.${format}`
+		contentDisposition(slug + format)
 	);
 	
 	switch (format) {

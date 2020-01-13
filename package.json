@@ -10,6 +10,8 @@
 		"start": "ts-node src/server.ts"
 	},
 	"dependencies": {
+		"@types/content-disposition": "^0.5.2",
+		"content-disposition": "^0.5.3",
 		"express": "^4.17.1",
 		"fluent-ffmpeg": "^2.1.2",
 		"helmet": "^3.20.1",
