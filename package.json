@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"content-disposition": "^0.5.3",
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"fluent-ffmpeg": "^2.1.2",
 		"helmet": "^3.20.1",
 		"morgan": "^1.9.1",
