@@ -1,13 +1,13 @@
 {
 	"name": "ytdl",
 	"version": "1.0.0",
-	"main": "src/server.ts",
+	"main": "api/index.ts",
 	"repository": "git@github.com:jellz/ytdl",
 	"author": "Daniel Gulic <danielgulic@gmail.com>",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"start": "ts-node src/server.ts"
+		"start": "ts-node api/index.ts"
 	},
 	"dependencies": {
 		"content-disposition": "^0.5.3",
